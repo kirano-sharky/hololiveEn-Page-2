@@ -1,0 +1,203 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(135deg, #43CBFF 10%, #9708CC 100%);
+}
+
+.卡片card {
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  padding: 20px 30px 30px 30px;
+  overflow: hidden;
+  background: white;
+}
+
+.卡片card .標志logo img{
+  height: 50px;
+  width: 45px;
+  /*object-fit: cover;*/
+}
+
+.卡片card .標志logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.卡片card .標志logo i {
+  font-size: 30px;
+  color: #0078d7;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.卡片card .標志logo i:hover {
+  color: #5d2b90;
+}
+
+.卡片card .圖片img {
+  text-align: center;
+  height: 200px;
+  margin-top: 40px;
+}
+
+.卡片card .圖片img img {
+  width: 200px;
+  height: 200px;
+  /*filter: drop-shadow(0 9px 9px);
+  color: #0078d7;*/
+  border-radius: 8px;
+  margin-top: -40px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.卡片card .圖片img img.active {
+  opacity: 1;
+}
+
+.卡片card .詳情details .主題 {
+  font-size: 38px;
+  font-weight: 500;
+  font-family: Brush Script MT;
+}
+
+.卡片card .詳情details p {
+  font-size: 15px;
+  font-weight: 400;
+  color: grey;
+  text-align: justify;
+}
+
+.卡片card .詳情details .特徵 i {
+  margin: 0 -1px;
+  font-size: 20px;
+}
+
+.卡片card .各種顔色 .顔色選項 {
+  display: flex;
+  align-items: center;
+}
+
+.各種顔色 .顔色選項 .顔色 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  margin-right: 8px;
+}
+
+.顔色選項 .圓形 {
+  display: flex;
+}
+
+.顔色選項 .圓形 .circle {
+  height: 18px;
+  width: 18px;
+  /*background: #0078d7;*/
+  border-radius: 50%;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.選擇 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.選擇 span {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.各種顔色 .選擇 {
+  display: flex;
+  /*flex-direction: column;*/
+  color: #bec0c2;
+}
+
+.顔色選項 .圓形 .circle.藍色 {
+  background: #0078d7;
+}
+
+.顔色選項 .圓形 .circle.藍色.active {
+  box-shadow: 0 0 0 2px #fff,
+               0 0 0 4px #0078d7;
+  filter: drop-shadow(0 0 10px);
+  color: #0078d7;
+}
+
+.顔色選項 .圓形 .circle.褐色 {
+  background: #75654f;
+}
+
+.顔色選項 .圓形 .circle.褐色.active {
+  box-shadow: 0 0 0 2px #fff,
+               0 0 0 4px #75654f;
+  filter: drop-shadow(0 0 10px);
+  color: #75654f;
+}
+
+.顔色選項 .圓形 .circle.紅色 {
+  background: #d13524;
+}
+
+.顔色選項 .圓形 .circle.紅色.active {
+  box-shadow: 0 0 0 2px #fff,
+               0 0 0 4px #d13524;
+  filter: drop-shadow(0 0 10px);
+  color: #d13524;
+}
+
+.顔色選項 .圓形 .circle.綠色 {
+  background: #50de65;
+}
+
+.顔色選項 .圓形 .circle.綠色.active {
+  box-shadow: 0 0 0 2px #fff,
+               0 0 0 4px #50de65;
+  filter: drop-shadow(0 0 10px);
+  color: #50de65;             
+}
+
+.顔色選項 .圓形 .circle.黃色 {
+  background: #db9c58;
+}
+
+.顔色選項 .圓形 .circle.黃色.active {
+  box-shadow: 0 0 0 2px #fff,
+               0 0 0 4px #db9c58;
+  filter: drop-shadow(0 0 10px);
+  color: #db9c58;
+}
+
+.顔色選項 .圓形 .circle.粉紅色 {
+  background: #db2763;
+}
+
+.顔色選項 .圓形 .circle.粉紅色.active {
+  box-shadow: 0 0 0 2px #fff,
+               0 0 0 4px #db2763;
+  filter: drop-shadow(0 0 10px);
+  color: #db2763;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(150deg, #7dc9f0, #d9bb9c, #f5805f, #5ff58f, #edd080, #e88ead)
+  /*background-image: linear-gradient(left, #0078d7 10%, #75654f 30%, #d13524 50%, #50de65 70%, #db9c58 90%, #db2763);
+  background-image: -webkit-linear-gradient(left, #0078d7 10%, #75654f 30%, #d13524 50%, #50de65 70%, #db9c58 90%, #db2763);*/  
+}
